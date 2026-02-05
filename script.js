@@ -4,9 +4,6 @@ const password = document.getElementById("password");
 const botao = form.querySelector("button");
 const toggleTema = document.getElementById("toggleTema");
 
-// ============================
-// FUNÇÕES DE VALIDAÇÃO
-// ============================
 
 function validarEmail() {
   const erro = email.nextElementSibling;
@@ -48,9 +45,6 @@ function verificarFormulario() {
   botao.disabled = !(emailValido && passwordValido);
 }
 
-// ============================
-// EVENTOS EM TEMPO REAL
-// ============================
 
 email.addEventListener("input", verificarFormulario);
 password.addEventListener("input", verificarFormulario);
@@ -58,9 +52,6 @@ password.addEventListener("input", verificarFormulario);
 email.addEventListener("blur", validarEmail);
 password.addEventListener("blur", validarPassword);
 
-// ============================
-// ENVIO
-// ============================
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -69,10 +60,11 @@ form.addEventListener("submit", (e) => {
   botao.disabled = true;
 });
 
+/*
 // ============================
 // MUDAR TEMA
 // ============================
 
 toggleTema.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-});
+}); */
