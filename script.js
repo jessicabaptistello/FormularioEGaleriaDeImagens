@@ -55,7 +55,7 @@ password.addEventListener("blur", validarPassword);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Formulário enviado com sucesso!");
+  alert("Enviado com sucesso!");
   form.reset();
   botao.disabled = true;
 });
